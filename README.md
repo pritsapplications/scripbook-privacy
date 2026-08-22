@@ -1,9 +1,9 @@
-# ScripBook — Privacy Policy
+# ScripBook, Privacy Policy
 
 Public privacy policy for the ScripBook budgeting app, hosted with GitHub Pages.
 
-- `index.html` — the policy itself, the URL submitted to both app stores
-- `STORE-FORMS.md` — exact answers for Apple's App Privacy questionnaire and
+- `index.html`, the policy itself, the URL submitted to both app stores
+- `STORE-FORMS.md`, exact answers for Apple's App Privacy questionnaire and
   Google's Data Safety form (not published; reference only)
 
 ## Why this repo exists
@@ -15,7 +15,7 @@ alone does not satisfy the requirement.
 
 ## Keep in mind
 
-ScripBook currently collects nothing — no accounts, no servers, no analytics,
+ScripBook currently collects nothing, no accounts, no servers, no analytics,
 no network requests. The policy says so plainly.
 
 **If a future version transmits anything** (cloud sync, crash reporting,

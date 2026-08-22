@@ -41,7 +41,11 @@ function markSVG(px = 46) {
 
 const file = new URL("index.html", import.meta.url);
 let html = fs.readFileSync(file, "utf8");
-const out = html.replace(/<svg viewBox="0 0 100 100"[\s\S]*?<\/svg>/, markSVG());
-if (out === html) { console.error("mark not found in index.html"); process.exit(1); }
+// Test for the match explicitly. Comparing before and after would also report
+// failure when the mark is already correct, which is the normal case on a
+// re-run.
+const RE = /<svg viewBox="0 0 100 100"[\s\S]*?<\/svg>/;
+if (!RE.test(html)) { console.error("mark not found in index.html"); process.exit(1); }
+const out = html.replace(RE, markSVG());
 fs.writeFileSync(file, out);
-console.log("mark updated — 5x5 square,", ROWS * COLS, "cells");
+console.log("mark updated, 5x5 square,", ROWS * COLS, "cells");
