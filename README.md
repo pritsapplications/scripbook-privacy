@@ -1,24 +1,13 @@
-# ScripBook, Privacy Policy
+# scripbook-privacy
 
-Public privacy policy for the ScripBook budgeting app, hosted with GitHub Pages.
+**Superseded.** The privacy policy now lives at
+https://pritsapps.com/privacy/ , served from the `scripbook-site` repo.
 
-- `index.html`, the policy itself, the URL submitted to both app stores
-- `STORE-FORMS.md`, exact answers for Apple's App Privacy questionnaire and
-  Google's Data Safety form (not published; reference only)
+This repo remains only to redirect. The old URL was published before the
+domain existed, so anything still holding it keeps working: `index.html` is a
+canonical tag plus a meta refresh plus a visible link, which is as close to a
+301 as GitHub Pages allows for a static site.
 
-## Why this repo exists
-
-Apple and Google both require a privacy policy at a publicly reachable URL,
-entered in the store listing. A reviewer, and anyone browsing the store page,
-must be able to open it **without installing the app**, so an in-app screen
-alone does not satisfy the requirement.
-
-## Keep in mind
-
-ScripBook currently collects nothing, no accounts, no servers, no analytics,
-no network requests. The policy says so plainly.
-
-**If a future version transmits anything** (cloud sync, crash reporting,
-analytics), update `index.html` *and* the store forms **before** that build
-ships. Publishing a build whose behaviour contradicts this page is a
-compliance problem, not a paperwork one.
+Do not edit the policy here. The wording has to match the in-app copy in
+`ScripBookApp/src/components/PrivacySheet.js` word for word, and having two
+editable copies is how they drift.
