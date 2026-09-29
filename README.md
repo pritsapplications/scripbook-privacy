@@ -1,7 +1,7 @@
 # scripbook-privacy
 
 **Superseded.** The privacy policy now lives at
-https://pritsapps.com/privacy/ , served from the `scripbook-site` repo.
+https://pritsapps.com/scripbook/privacy/ , served from the `scripbook-site` repo.
 
 This repo remains only to redirect. The old URL was published before the
 domain existed, so anything still holding it keeps working: `index.html` is a
